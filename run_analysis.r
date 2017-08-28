@@ -31,8 +31,8 @@ features[,2] <- as.character(features[,2])
 
 mean_std_features <- grep(".*mean.*|.*std.*", features[,2])
 mean_std_features.names <- features[mean_std_features,2]
-mean_std_features.names = gsub('-mean', 'Mean', mean_std_features.names)
-mean_std_features.names = gsub('-std', 'Std', mean_std_features.names)
+mean_std_features.names <- gsub('-mean', 'Mean', mean_std_features.names)
+mean_std_features.names <- gsub('-std', 'Std', mean_std_features.names)
 mean_std_features.names <- gsub('[-()]', '', mean_std_features.names)
 
 
